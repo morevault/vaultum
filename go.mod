@@ -12,7 +12,7 @@ go 1.22.1
 
 toolchain go1.22.6
 
-replace github.com/morevault/vaultum/api v1.9.2 => github.com/morevault/vaultum/api v1.100.0-development20240408
+//replace github.com/morevault/vaultum/api v1.9.2 => github.com/morevault/vaultum/api v1.100.0-development20240408
 
 replace github.com/morevault/vaultum/api/v2 => ./api
 
