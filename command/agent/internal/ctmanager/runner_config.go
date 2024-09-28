@@ -6,8 +6,8 @@ import (
 	"strings"
 
 	"github.com/hashicorp/go-hclog"
-	ctconfig "github.com/morevault/vault-template/config"
-	ctlogging "github.com/morevault/vault-template/logging"
+	ctconfig "github.com/openbao/openbao-template/config"
+	ctlogging "github.com/openbao/openbao-template/logging"
 
 	"github.com/morevault/vaultum/command/agent/config"
 	"github.com/morevault/vaultum/sdk/v2/helper/pointerutil"

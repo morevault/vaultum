@@ -10,9 +10,9 @@ import (
 	"time"
 
 	"github.com/hashicorp/go-hclog"
-	"github.com/morevault/vault-template/child"
-	ctconfig "github.com/morevault/vault-template/config"
-	"github.com/morevault/vault-template/manager"
+	"github.com/openbao/openbao-template/child"
+	ctconfig "github.com/openbao/openbao-template/config"
+	"github.com/openbao/openbao-template/manager"
 	"golang.org/x/exp/slices"
 
 	"github.com/morevault/vaultum/command/agent/config"

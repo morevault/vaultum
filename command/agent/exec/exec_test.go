@@ -17,7 +17,7 @@ import (
 
 	"github.com/hashicorp/go-hclog"
 	"github.com/hashicorp/go-retryablehttp"
-	ctconfig "github.com/morevault/vault-template/config"
+	ctconfig "github.com/openbao/openbao-template/config"
 
 	"github.com/morevault/vaultum/command/agent/config"
 	"github.com/morevault/vaultum/sdk/v2/helper/logging"

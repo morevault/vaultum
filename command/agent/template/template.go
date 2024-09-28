@@ -17,8 +17,8 @@ import (
 	"go.uber.org/atomic"
 
 	"github.com/hashicorp/go-hclog"
-	ctconfig "github.com/morevault/vault-template/config"
-	"github.com/morevault/vault-template/manager"
+	ctconfig "github.com/openbao/openbao-template/config"
+	"github.com/openbao/openbao-template/manager"
 
 	"github.com/morevault/vaultum/command/agent/config"
 	"github.com/morevault/vaultum/command/agent/internal/ctmanager"

@@ -27,7 +27,7 @@ import (
 	"github.com/hashicorp/go-secure-stdlib/reloadutil"
 	"github.com/kr/pretty"
 	"github.com/oklog/run"
-	ctconfig "github.com/morevault/vault-template/config"
+	ctconfig "github.com/openbao/openbao-template/config"
 	"github.com/posener/complete"
 	"golang.org/x/text/cases"
 	"golang.org/x/text/language"
