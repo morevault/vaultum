@@ -1,4 +1,3 @@
-
 // SPDX-License-Identifier: MPL-2.0
 
 package vault
@@ -13,11 +12,11 @@ import (
 	"time"
 
 	"github.com/armon/go-metrics"
-	"github.com/morevault/vaultum/helper/metricsutil"
 	proto "github.com/golang/protobuf/proto"
-	wrapping "github.com/openbao/go-kms-wrapping/v2"
+	"github.com/morevault/vaultum/helper/metricsutil"
 	"github.com/morevault/vaultum/sdk/v2/physical"
 	"github.com/morevault/vaultum/vault/seal"
+	wrapping "github.com/openbao/go-kms-wrapping/v2"
 )
 
 // phy implements physical.Backend. It maps keys to a slice of entries.

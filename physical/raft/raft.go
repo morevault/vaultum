@@ -29,7 +29,6 @@ import (
 	autopilot "github.com/hashicorp/raft-autopilot"
 	raftboltdb "github.com/hashicorp/raft-boltdb/v2"
 	snapshot "github.com/hashicorp/raft-snapshot"
-	wrapping "github.com/openbao/go-kms-wrapping/v2"
 	"github.com/morevault/vaultum/api/v2"
 	"github.com/morevault/vaultum/helper/metricsutil"
 	"github.com/morevault/vaultum/sdk/v2/helper/consts"
@@ -39,6 +38,7 @@ import (
 	"github.com/morevault/vaultum/vault/cluster"
 	"github.com/morevault/vaultum/vault/seal"
 	"github.com/morevault/vaultum/version"
+	wrapping "github.com/openbao/go-kms-wrapping/v2"
 	bolt "go.etcd.io/bbolt"
 )
 

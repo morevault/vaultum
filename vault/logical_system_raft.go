@@ -1,4 +1,3 @@
-
 // SPDX-License-Identifier: MPL-2.0
 
 package vault
@@ -15,12 +14,12 @@ import (
 	"github.com/golang/protobuf/proto"
 	"github.com/hashicorp/go-uuid"
 	"github.com/mitchellh/mapstructure"
-	wrapping "github.com/openbao/go-kms-wrapping/v2"
 	"github.com/morevault/vaultum/helper/namespace"
 	"github.com/morevault/vaultum/physical/raft"
 	"github.com/morevault/vaultum/sdk/v2/framework"
 	"github.com/morevault/vaultum/sdk/v2/logical"
 	"github.com/morevault/vaultum/sdk/v2/physical"
+	wrapping "github.com/openbao/go-kms-wrapping/v2"
 )
 
 // raftStoragePaths returns paths for use when raft is the storage mechanism.

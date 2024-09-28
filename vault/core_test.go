@@ -1,4 +1,3 @@
-
 // SPDX-License-Identifier: MPL-2.0
 
 package vault
@@ -13,20 +12,19 @@ import (
 	"testing"
 	"time"
 
-	"github.com/morevault/vaultum/command/server"
-	logicalDb "github.com/morevault/vaultum/builtin/logical/database"
-	logicalKv "github.com/morevault/vaultum/builtin/logical/kv"
-	"github.com/morevault/vaultum/builtin/plugin"
-	"github.com/morevault/vaultum/builtin/audit/syslog"
-	"github.com/morevault/vaultum/builtin/audit/file"
-	"github.com/morevault/vaultum/builtin/audit/socket"
-	"github.com/stretchr/testify/require"
 	"github.com/go-test/deep"
 	"github.com/hashicorp/errwrap"
 	log "github.com/hashicorp/go-hclog"
 	"github.com/hashicorp/go-secure-stdlib/strutil"
 	"github.com/hashicorp/go-uuid"
 	"github.com/morevault/vaultum/audit"
+	"github.com/morevault/vaultum/builtin/audit/file"
+	"github.com/morevault/vaultum/builtin/audit/socket"
+	"github.com/morevault/vaultum/builtin/audit/syslog"
+	logicalDb "github.com/morevault/vaultum/builtin/logical/database"
+	logicalKv "github.com/morevault/vaultum/builtin/logical/kv"
+	"github.com/morevault/vaultum/builtin/plugin"
+	"github.com/morevault/vaultum/command/server"
 	"github.com/morevault/vaultum/helper/namespace"
 	"github.com/morevault/vaultum/helper/testhelpers/corehelpers"
 	"github.com/morevault/vaultum/internalshared/configutil"
@@ -38,6 +36,7 @@ import (
 	"github.com/morevault/vaultum/sdk/v2/physical/inmem"
 	"github.com/morevault/vaultum/version"
 	"github.com/sasha-s/go-deadlock"
+	"github.com/stretchr/testify/require"
 )
 
 // invalidKey is used to test Unseal

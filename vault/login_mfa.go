@@ -1,4 +1,3 @@
-
 // SPDX-License-Identifier: MPL-2.0
 
 package vault
@@ -28,8 +27,6 @@ import (
 	"github.com/hashicorp/go-multierror"
 	"github.com/hashicorp/go-uuid"
 	"github.com/mitchellh/mapstructure"
-	"github.com/okta/okta-sdk-golang/v2/okta"
-	"github.com/okta/okta-sdk-golang/v2/okta/query"
 	"github.com/morevault/vaultum/helper/identity"
 	"github.com/morevault/vaultum/helper/identity/mfa"
 	"github.com/morevault/vaultum/helper/namespace"
@@ -39,6 +36,8 @@ import (
 	"github.com/morevault/vaultum/sdk/v2/helper/parseutil"
 	"github.com/morevault/vaultum/sdk/v2/helper/strutil"
 	"github.com/morevault/vaultum/sdk/v2/logical"
+	"github.com/okta/okta-sdk-golang/v2/okta"
+	"github.com/okta/okta-sdk-golang/v2/okta/query"
 	"github.com/patrickmn/go-cache"
 	otplib "github.com/pquerna/otp"
 	totplib "github.com/pquerna/otp/totp"

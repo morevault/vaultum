@@ -1,4 +1,3 @@
-
 // SPDX-License-Identifier: MPL-2.0
 
 package vault
@@ -8,10 +7,10 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/morevault/vaultum/helper/namespace"
-	"github.com/morevault/vaultum/helper/versions"
 	"github.com/hashicorp/go-multierror"
 	"github.com/hashicorp/go-secure-stdlib/strutil"
+	"github.com/morevault/vaultum/helper/namespace"
+	"github.com/morevault/vaultum/helper/versions"
 	"github.com/morevault/vaultum/sdk/v2/helper/consts"
 	"github.com/morevault/vaultum/sdk/v2/logical"
 	"github.com/morevault/vaultum/sdk/v2/plugin"

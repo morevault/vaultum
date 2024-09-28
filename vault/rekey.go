@@ -1,4 +1,3 @@
-
 // SPDX-License-Identifier: MPL-2.0
 
 package vault
@@ -13,8 +12,6 @@ import (
 	"net/http"
 
 	"github.com/hashicorp/go-uuid"
-	wrapping "github.com/openbao/go-kms-wrapping/v2"
-	aeadwrapper "github.com/openbao/go-kms-wrapping/wrappers/aead/v2"
 	"github.com/morevault/vaultum/helper/pgpkeys"
 	"github.com/morevault/vaultum/sdk/v2/helper/consts"
 	"github.com/morevault/vaultum/sdk/v2/helper/jsonutil"
@@ -22,6 +19,8 @@ import (
 	"github.com/morevault/vaultum/sdk/v2/logical"
 	"github.com/morevault/vaultum/sdk/v2/physical"
 	"github.com/morevault/vaultum/vault/seal"
+	wrapping "github.com/openbao/go-kms-wrapping/v2"
+	aeadwrapper "github.com/openbao/go-kms-wrapping/wrappers/aead/v2"
 )
 
 const (

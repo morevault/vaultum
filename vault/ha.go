@@ -1,4 +1,3 @@
-
 // SPDX-License-Identifier: MPL-2.0
 
 package vault
@@ -20,7 +19,6 @@ import (
 	"github.com/hashicorp/errwrap"
 	"github.com/hashicorp/go-multierror"
 	"github.com/hashicorp/go-uuid"
-	"github.com/oklog/run"
 	"github.com/morevault/vaultum/helper/namespace"
 	"github.com/morevault/vaultum/sdk/v2/helper/certutil"
 	"github.com/morevault/vaultum/sdk/v2/helper/consts"
@@ -28,6 +26,7 @@ import (
 	"github.com/morevault/vaultum/sdk/v2/logical"
 	"github.com/morevault/vaultum/sdk/v2/physical"
 	"github.com/morevault/vaultum/vault/seal"
+	"github.com/oklog/run"
 )
 
 const (

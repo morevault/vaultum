@@ -1,4 +1,3 @@
-
 // SPDX-License-Identifier: MPL-2.0
 
 package vault
@@ -13,14 +12,14 @@ import (
 	"strings"
 	"sync/atomic"
 
-	aeadwrapper "github.com/openbao/go-kms-wrapping/wrappers/aead/v2"
-	"github.com/morevault/vaultum/sdk/v2/helper/jsonutil"
-	"github.com/morevault/vaultum/sdk/v2/physical"
 	"github.com/ProtonMail/go-crypto/openpgp"
 	"github.com/ProtonMail/go-crypto/openpgp/packet"
 	"github.com/golang/protobuf/proto"
-	wrapping "github.com/openbao/go-kms-wrapping/v2"
+	"github.com/morevault/vaultum/sdk/v2/helper/jsonutil"
+	"github.com/morevault/vaultum/sdk/v2/physical"
 	"github.com/morevault/vaultum/vault/seal"
+	wrapping "github.com/openbao/go-kms-wrapping/v2"
+	aeadwrapper "github.com/openbao/go-kms-wrapping/wrappers/aead/v2"
 )
 
 const (

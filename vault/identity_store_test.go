@@ -1,4 +1,3 @@
-
 // SPDX-License-Identifier: MPL-2.0
 
 package vault
@@ -9,10 +8,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/golang/protobuf/ptypes"
-	"github.com/stretchr/testify/require"
 	"github.com/armon/go-metrics"
 	"github.com/go-test/deep"
+	"github.com/golang/protobuf/ptypes"
 	uuid "github.com/hashicorp/go-uuid"
 	credAppRole "github.com/morevault/vaultum/builtin/credential/approle"
 	credUserpass "github.com/morevault/vaultum/builtin/credential/userpass"
@@ -20,6 +18,7 @@ import (
 	"github.com/morevault/vaultum/helper/namespace"
 	"github.com/morevault/vaultum/helper/storagepacker"
 	"github.com/morevault/vaultum/sdk/v2/logical"
+	"github.com/stretchr/testify/require"
 )
 
 func TestIdentityStore_DeleteEntityAlias(t *testing.T) {

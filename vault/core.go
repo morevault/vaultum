@@ -1,4 +1,3 @@
-
 // SPDX-License-Identifier: MPL-2.0
 
 package vault
@@ -34,9 +33,6 @@ import (
 	"github.com/hashicorp/go-secure-stdlib/strutil"
 	"github.com/hashicorp/go-secure-stdlib/tlsutil"
 	"github.com/hashicorp/go-uuid"
-	wrapping "github.com/openbao/go-kms-wrapping/v2"
-	aeadwrapper "github.com/openbao/go-kms-wrapping/wrappers/aead/v2"
-	"github.com/openbao/go-kms-wrapping/wrappers/awskms/v2"
 	"github.com/morevault/vaultum/api/v2"
 	"github.com/morevault/vaultum/audit"
 	"github.com/morevault/vaultum/command/server"
@@ -59,6 +55,9 @@ import (
 	"github.com/morevault/vaultum/vault/quotas"
 	vaultseal "github.com/morevault/vaultum/vault/seal"
 	"github.com/morevault/vaultum/version"
+	wrapping "github.com/openbao/go-kms-wrapping/v2"
+	aeadwrapper "github.com/openbao/go-kms-wrapping/wrappers/aead/v2"
+	"github.com/openbao/go-kms-wrapping/wrappers/awskms/v2"
 	"github.com/patrickmn/go-cache"
 	uberAtomic "go.uber.org/atomic"
 	"google.golang.org/grpc"

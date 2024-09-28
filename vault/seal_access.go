@@ -1,4 +1,3 @@
-
 // SPDX-License-Identifier: MPL-2.0
 
 package vault
@@ -6,8 +5,8 @@ package vault
 import (
 	"context"
 
-	wrapping "github.com/openbao/go-kms-wrapping/v2"
 	"github.com/morevault/vaultum/vault/seal"
+	wrapping "github.com/openbao/go-kms-wrapping/v2"
 )
 
 // SealAccess is a wrapper around Seal that exposes accessor methods

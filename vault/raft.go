@@ -1,4 +1,3 @@
-
 // SPDX-License-Identifier: MPL-2.0
 
 package vault
@@ -23,12 +22,12 @@ import (
 	"github.com/hashicorp/go-secure-stdlib/tlsutil"
 	"github.com/hashicorp/go-uuid"
 	"github.com/mitchellh/mapstructure"
-	wrapping "github.com/openbao/go-kms-wrapping/v2"
 	"github.com/morevault/vaultum/api/v2"
 	"github.com/morevault/vaultum/physical/raft"
 	"github.com/morevault/vaultum/sdk/v2/helper/jsonutil"
 	"github.com/morevault/vaultum/sdk/v2/logical"
 	"github.com/morevault/vaultum/vault/seal"
+	wrapping "github.com/openbao/go-kms-wrapping/v2"
 	"golang.org/x/net/http2"
 )
 

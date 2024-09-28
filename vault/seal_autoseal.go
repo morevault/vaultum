@@ -1,4 +1,3 @@
-
 // SPDX-License-Identifier: MPL-2.0
 
 package vault
@@ -14,12 +13,12 @@ import (
 	"sync/atomic"
 	"time"
 
-	aeadwrapper "github.com/openbao/go-kms-wrapping/wrappers/aead/v2"
 	proto "github.com/golang/protobuf/proto"
 	log "github.com/hashicorp/go-hclog"
-	wrapping "github.com/openbao/go-kms-wrapping/v2"
 	"github.com/morevault/vaultum/sdk/v2/physical"
 	"github.com/morevault/vaultum/vault/seal"
+	wrapping "github.com/openbao/go-kms-wrapping/v2"
+	aeadwrapper "github.com/openbao/go-kms-wrapping/wrappers/aead/v2"
 )
 
 // barrierTypeUpgradeCheck checks for backwards compat on barrier type, not

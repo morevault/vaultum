@@ -22,12 +22,12 @@ import (
 	"github.com/hashicorp/go-secure-stdlib/gatedwriter"
 	"github.com/hashicorp/go-secure-stdlib/strutil"
 	"github.com/mholt/archiver/v3"
-	"github.com/oklog/run"
 	"github.com/morevault/vaultum/api/v2"
 	"github.com/morevault/vaultum/helper/osutil"
 	"github.com/morevault/vaultum/sdk/v2/helper/jsonutil"
 	"github.com/morevault/vaultum/sdk/v2/helper/logging"
 	"github.com/morevault/vaultum/version"
+	"github.com/oklog/run"
 	"github.com/posener/complete"
 )
 

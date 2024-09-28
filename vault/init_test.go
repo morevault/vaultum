@@ -1,4 +1,3 @@
-
 // SPDX-License-Identifier: MPL-2.0
 
 package vault
@@ -9,10 +8,10 @@ import (
 	"testing"
 
 	log "github.com/hashicorp/go-hclog"
-	wrapping "github.com/openbao/go-kms-wrapping/v2"
 	"github.com/morevault/vaultum/sdk/v2/helper/logging"
 	"github.com/morevault/vaultum/sdk/v2/logical"
 	"github.com/morevault/vaultum/sdk/v2/physical/inmem"
+	wrapping "github.com/openbao/go-kms-wrapping/v2"
 )
 
 func TestCore_Init(t *testing.T) {
