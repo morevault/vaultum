@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MPL-2.0
 
-package main // import "github.com/morevault/vault"
+package main // import "github.com/morevault/vaultum"
 
 import (
 	"os"
