@@ -26,7 +26,7 @@ before:
 builds:
   - id: builds-linux
     ldflags:
-      - -X github.com/morevault/vault/version.fullVersion={{.Version}} -X github.com/morevault/vault/version.GitCommit={{.Commit}} -X github.com/morevault/vault/version.BuildDate={{ .Date }}
+      - -X github.com/morevault/vaultum/version.fullVersion={{.Version}} -X github.com/morevault/vaultum/version.GitCommit={{.Commit}} -X github.com/morevault/vaultum/version.BuildDate={{ .Date }}
     env:
       - CGO_ENABLED=0
     goos:
@@ -54,7 +54,7 @@ builds:
     skip: false
   - id: builds-other
     ldflags:
-      - -X github.com/morevault/vault/version.fullVersion={{.Version}} -X github.com/morevault/vault/version.GitCommit={{.Commit}} -X github.com/morevault/vault/version.BuildDate={{ .Date }}
+      - -X github.com/morevault/vaultum/version.fullVersion={{.Version}} -X github.com/morevault/vaultum/version.GitCommit={{.Commit}} -X github.com/morevault/vaultum/version.BuildDate={{ .Date }}
     env:
       - CGO_ENABLED=0
     goos:
@@ -244,7 +244,7 @@ checksum:
 #LINUXONLY#      - "--label=org.opencontainers.image.vendor=OpenBao"
 #LINUXONLY#      - "--label=org.opencontainers.image.description=OpenBao {{ .Version }}"
 #LINUXONLY#      - "--label=org.opencontainers.image.url=https://github.com/openbao/openbao"
-#LINUXONLY#      - "--label=org.opencontainers.image.documentation=https://github.com/morevault/vault/blob/main/README.md"
+#LINUXONLY#      - "--label=org.opencontainers.image.documentation=https://github.com/morevault/vaultum/blob/main/README.md"
 #LINUXONLY#      - "--label=org.opencontainers.image.source=https://github.com/openbao/openbao"
 #LINUXONLY#      - "--label=org.opencontainers.image.licenses=MPL-2.0"
 #LINUXONLY#      - "--label=org.opencontainers.image.version={{ .Version }}"
@@ -280,7 +280,7 @@ checksum:
 #LINUXONLY#      - "--label=org.opencontainers.image.vendor=OpenBao"
 #LINUXONLY#      - "--label=org.opencontainers.image.description=OpenBao {{ .Version }}"
 #LINUXONLY#      - "--label=org.opencontainers.image.url=https://github.com/openbao/openbao"
-#LINUXONLY#      - "--label=org.opencontainers.image.documentation=https://github.com/morevault/vault/blob/main/README.md"
+#LINUXONLY#      - "--label=org.opencontainers.image.documentation=https://github.com/morevault/vaultum/blob/main/README.md"
 #LINUXONLY#      - "--label=org.opencontainers.image.source=https://github.com/openbao/openbao"
 #LINUXONLY#      - "--label=org.opencontainers.image.licenses=MPL-2.0"
 #LINUXONLY#      - "--label=org.opencontainers.image.version={{ .Version }}"
@@ -316,7 +316,7 @@ checksum:
 #LINUXONLY#      - "--label=org.opencontainers.image.vendor=OpenBao"
 #LINUXONLY#      - "--label=org.opencontainers.image.description=OpenBao {{ .Version }}"
 #LINUXONLY#      - "--label=org.opencontainers.image.url=https://github.com/openbao/openbao"
-#LINUXONLY#      - "--label=org.opencontainers.image.documentation=https://github.com/morevault/vault/blob/main/README.md"
+#LINUXONLY#      - "--label=org.opencontainers.image.documentation=https://github.com/morevault/vaultum/blob/main/README.md"
 #LINUXONLY#      - "--label=org.opencontainers.image.source=https://github.com/openbao/openbao"
 #LINUXONLY#      - "--label=org.opencontainers.image.licenses=MPL-2.0"
 #LINUXONLY#      - "--label=org.opencontainers.image.version={{ .Version }}"
@@ -351,7 +351,7 @@ checksum:
 #LINUXONLY#      - "--label=org.opencontainers.image.vendor=OpenBao"
 #LINUXONLY#      - "--label=org.opencontainers.image.description=OpenBao {{ .Version }}"
 #LINUXONLY#      - "--label=org.opencontainers.image.url=https://github.com/openbao/openbao"
-#LINUXONLY#      - "--label=org.opencontainers.image.documentation=https://github.com/morevault/vault/blob/main/README.md"
+#LINUXONLY#      - "--label=org.opencontainers.image.documentation=https://github.com/morevault/vaultum/blob/main/README.md"
 #LINUXONLY#      - "--label=org.opencontainers.image.source=https://github.com/openbao/openbao"
 #LINUXONLY#      - "--label=org.opencontainers.image.licenses=MPL-2.0"
 #LINUXONLY#      - "--label=org.opencontainers.image.version={{ .Version }}"
@@ -386,7 +386,7 @@ checksum:
 #LINUXONLY#      - "--label=org.opencontainers.image.vendor=OpenBao"
 #LINUXONLY#      - "--label=org.opencontainers.image.description=OpenBao {{ .Version }}"
 #LINUXONLY#      - "--label=org.opencontainers.image.url=https://github.com/openbao/openbao"
-#LINUXONLY#      - "--label=org.opencontainers.image.documentation=https://github.com/morevault/vault/blob/main/README.md"
+#LINUXONLY#      - "--label=org.opencontainers.image.documentation=https://github.com/morevault/vaultum/blob/main/README.md"
 #LINUXONLY#      - "--label=org.opencontainers.image.source=https://github.com/openbao/openbao"
 #LINUXONLY#      - "--label=org.opencontainers.image.licenses=MPL-2.0"
 #LINUXONLY#      - "--label=org.opencontainers.image.version={{ .Version }}"
@@ -421,7 +421,7 @@ checksum:
 #LINUXONLY#      - "--label=org.opencontainers.image.vendor=OpenBao"
 #LINUXONLY#      - "--label=org.opencontainers.image.description=OpenBao {{ .Version }}"
 #LINUXONLY#      - "--label=org.opencontainers.image.url=https://github.com/openbao/openbao"
-#LINUXONLY#      - "--label=org.opencontainers.image.documentation=https://github.com/morevault/vault/blob/main/README.md"
+#LINUXONLY#      - "--label=org.opencontainers.image.documentation=https://github.com/morevault/vaultum/blob/main/README.md"
 #LINUXONLY#      - "--label=org.opencontainers.image.source=https://github.com/openbao/openbao"
 #LINUXONLY#      - "--label=org.opencontainers.image.licenses=MPL-2.0"
 #LINUXONLY#      - "--label=org.opencontainers.image.version={{ .Version }}"
@@ -456,7 +456,7 @@ checksum:
 #LINUXONLY#      - "--label=org.opencontainers.image.vendor=OpenBao"
 #LINUXONLY#      - "--label=org.opencontainers.image.description=OpenBao {{ .Version }}"
 #LINUXONLY#      - "--label=org.opencontainers.image.url=https://github.com/openbao/openbao"
-#LINUXONLY#      - "--label=org.opencontainers.image.documentation=https://github.com/morevault/vault/blob/main/README.md"
+#LINUXONLY#      - "--label=org.opencontainers.image.documentation=https://github.com/morevault/vaultum/blob/main/README.md"
 #LINUXONLY#      - "--label=org.opencontainers.image.source=https://github.com/openbao/openbao"
 #LINUXONLY#      - "--label=org.opencontainers.image.licenses=MPL-2.0"
 #LINUXONLY#      - "--label=org.opencontainers.image.version={{ .Version }}"
@@ -492,7 +492,7 @@ checksum:
 #LINUXONLY#      - "--label=org.opencontainers.image.vendor=OpenBao"
 #LINUXONLY#      - "--label=org.opencontainers.image.description=OpenBao {{ .Version }}"
 #LINUXONLY#      - "--label=org.opencontainers.image.url=https://github.com/openbao/openbao"
-#LINUXONLY#      - "--label=org.opencontainers.image.documentation=https://github.com/morevault/vault/blob/main/README.md"
+#LINUXONLY#      - "--label=org.opencontainers.image.documentation=https://github.com/morevault/vaultum/blob/main/README.md"
 #LINUXONLY#      - "--label=org.opencontainers.image.source=https://github.com/openbao/openbao"
 #LINUXONLY#      - "--label=org.opencontainers.image.licenses=MPL-2.0"
 #LINUXONLY#      - "--label=org.opencontainers.image.version={{ .Version }}"
@@ -527,7 +527,7 @@ checksum:
 #LINUXONLY#      - "--label=org.opencontainers.image.vendor=OpenBao"
 #LINUXONLY#      - "--label=org.opencontainers.image.description=OpenBao {{ .Version }}"
 #LINUXONLY#      - "--label=org.opencontainers.image.url=https://github.com/openbao/openbao"
-#LINUXONLY#      - "--label=org.opencontainers.image.documentation=https://github.com/morevault/vault/blob/main/README.md"
+#LINUXONLY#      - "--label=org.opencontainers.image.documentation=https://github.com/morevault/vaultum/blob/main/README.md"
 #LINUXONLY#      - "--label=org.opencontainers.image.source=https://github.com/openbao/openbao"
 #LINUXONLY#      - "--label=org.opencontainers.image.licenses=MPL-2.0"
 #LINUXONLY#      - "--label=org.opencontainers.image.version={{ .Version }}"
@@ -562,7 +562,7 @@ checksum:
 #LINUXONLY#      - "--label=org.opencontainers.image.vendor=OpenBao"
 #LINUXONLY#      - "--label=org.opencontainers.image.description=OpenBao {{ .Version }}"
 #LINUXONLY#      - "--label=org.opencontainers.image.url=https://github.com/openbao/openbao"
-#LINUXONLY#      - "--label=org.opencontainers.image.documentation=https://github.com/morevault/vault/blob/main/README.md"
+#LINUXONLY#      - "--label=org.opencontainers.image.documentation=https://github.com/morevault/vaultum/blob/main/README.md"
 #LINUXONLY#      - "--label=org.opencontainers.image.source=https://github.com/openbao/openbao"
 #LINUXONLY#      - "--label=org.opencontainers.image.licenses=MPL-2.0"
 #LINUXONLY#      - "--label=org.opencontainers.image.version={{ .Version }}"

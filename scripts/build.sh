@@ -18,7 +18,7 @@ DIR="$( cd -P "$SOURCE_DIR/.." && pwd )"
 cd "$DIR"
 
 # Set build tags
-BUILD_TAGS="${BUILD_TAGS:-"openbao"}"
+BUILD_TAGS="${BUILD_TAGS:-"vaultum"}"
 
 # Get the git commit
 GIT_COMMIT="$(git rev-parse HEAD)"
@@ -44,7 +44,7 @@ echo "==> Building..."
 ${GO_CMD} build \
     -gcflags "${GCFLAGS}" \
     -ldflags "${LD_FLAGS} -X github.com/morevault/vaultum/version.GitCommit='${GIT_COMMIT}${GIT_DIRTY}' -X github.com/morevault/vaultum/version.BuildDate=${BUILD_DATE}" \
-    -o "bin/bao" \
+    -o "bin/vaultum" \
     -tags "${BUILD_TAGS}" \
     .
 
@@ -55,8 +55,8 @@ IFS=$OLDIFS
 
 # Ensure the go bin folder exists
 mkdir -p ${BIN_PATH}
-rm -f ${BIN_PATH}/bao
-cp bin/bao ${BIN_PATH}
+rm -f ${BIN_PATH}/vaultum
+cp bin/vaultum ${BIN_PATH}
 
 # Done!
 echo

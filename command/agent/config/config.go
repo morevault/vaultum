@@ -20,8 +20,8 @@ import (
 	"github.com/hashicorp/hcl"
 	"github.com/hashicorp/hcl/hcl/ast"
 	"github.com/mitchellh/mapstructure"
-	ctconfig "github.com/morevault/morevault-template/config"
-	ctsignals "github.com/morevault/morevault-template/signals"
+	ctconfig "github.com/openbao/openbao-template/config"
+	ctsignals "github.com/openbao/openbao-template/signals"
 	"k8s.io/utils/strings/slices"
 
 	"github.com/morevault/vaultum/api/v2"

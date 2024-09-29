@@ -1,4 +1,4 @@
-module github.com/morevault/morevault
+module github.com/morevault/vaultum
 
 // The go version directive value isn't consulted when building our production binaries,
 // and the vault module isn't intended to be imported into other projects.  As such the
@@ -11,8 +11,6 @@ module github.com/morevault/morevault
 go 1.22.1
 
 toolchain go1.22.6
-
-//replace github.com/morevault/vaultum/api v1.9.2 => github.com/morevault/vaultum/api v1.100.0-development20240408
 
 replace github.com/morevault/vaultum/api/v2 => ./api
 
@@ -303,8 +301,6 @@ require (
 	github.com/nicolai86/scaleway-sdk v1.10.2-0.20180628010248-798f60e20bb2 // indirect
 	github.com/nwaples/rardecode v1.1.2 // indirect
 	github.com/openbao/go-kms-wrapping/entropy/v2 v2.1.0 // indirect
-	github.com/morevault/vaultum/api v1.9.2 // indirect
-	github.com/morevault/vaultum/api/auth/kubernetes v0.0.0-20240227182507-a8c90d250c17 // indirect
 	github.com/opencontainers/go-digest v1.0.0 // indirect
 	github.com/opencontainers/image-spec v1.1.0 // indirect
 	github.com/opencontainers/runc v1.1.12 // indirect
