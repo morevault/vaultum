@@ -45,8 +45,8 @@ require (
 	github.com/mitchellh/copystructure v1.2.0
 	github.com/mitchellh/go-testing-interface v1.14.1
 	github.com/mitchellh/mapstructure v1.5.0
-	github.com/openbao/go-kms-wrapping/entropy/v2 v2.1.0
-	github.com/openbao/go-kms-wrapping/v2 v2.1.0
+	github.com/hashicorp/go-hashicorp/go-kms-wrapping/v2 v2.0.1
+	github.com/hashicorp/go-kms-wrapping/v2 v2.0.1
 	github.com/morevault/vaultum/api/v2 v2.0.0-00010101000000-000000000000
 	github.com/pierrec/lz4 v2.6.1+incompatible
 	github.com/ryanuber/go-glob v1.0.0

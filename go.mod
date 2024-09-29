@@ -110,15 +110,15 @@ require (
 	github.com/natefinch/atomic v0.0.0-20150920032501-a62ce929ffcc
 	github.com/oklog/run v1.1.0
 	github.com/okta/okta-sdk-golang/v2 v2.20.0
-	github.com/openbao/go-kms-wrapping/v2 v2.1.0
-	github.com/openbao/go-kms-wrapping/wrappers/aead/v2 v2.1.0
-	github.com/openbao/go-kms-wrapping/wrappers/alicloudkms/v2 v2.1.0
-	github.com/openbao/go-kms-wrapping/wrappers/awskms/v2 v2.1.0
-	github.com/openbao/go-kms-wrapping/wrappers/azurekeyvault/v2 v2.1.0
-	github.com/openbao/go-kms-wrapping/wrappers/gcpckms/v2 v2.1.0
-	github.com/openbao/go-kms-wrapping/wrappers/ocikms/v2 v2.1.0
-	github.com/openbao/go-kms-wrapping/wrappers/transit/v2 v2.1.0
-	github.com/openbao/openbao-template v1.0.0
+	github.com/hashicorp/go-kms-wrapping/v2 v2.0.1
+	github.com/hashicorp/go-kms-wrapping/wrappers/aead/v2 v2.0.9
+	github.com/hashicorp/go-kms-wrapping/wrappers/alicloudkms/v2 v2.0.3
+	github.com/hashicorp/go-kms-wrapping/wrappers/awskms/v2 v2.0.9
+	github.com/hashicorp/go-kms-wrapping/wrappers/azurekeyvault/v2 v2.1.0
+	github.com/hashicorp/go-kms-wrapping/wrappers/gcpckms/v2 v2.1.0
+	github.com/hashicorp/go-kms-wrapping/wrappers/ocikms/v2 v2.1.0
+	github.com/hashicorp/go-kms-wrapping/wrappers/transit/v2 v2.1.0
+	github.com/hashicorp/consul-template v0.39.1
 	github.com/morevault/vaultum/api/auth/approle/v2 v2.0.0
 	github.com/morevault/vaultum/api/auth/userpass/v2 v2.0.0
 	github.com/morevault/vaultum/api/v2 v2.0.1
@@ -300,7 +300,9 @@ require (
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
 	github.com/nicolai86/scaleway-sdk v1.10.2-0.20180628010248-798f60e20bb2 // indirect
 	github.com/nwaples/rardecode v1.1.2 // indirect
-	github.com/openbao/go-kms-wrapping/entropy/v2 v2.1.0 // indirect
+	github.com/hashicorp/go-kms-wrapping/entropy/v2 v2.0.1 // indirect
+    github.com/openbao/openbao/api/v2 v2.0.1 // inderect
+    github.com/openbao/openbao/api/auth/kubernetes v0.0.0-20240227182507-a8c90d250c17 // indirect
 	github.com/opencontainers/go-digest v1.0.0 // indirect
 	github.com/opencontainers/image-spec v1.1.0 // indirect
 	github.com/opencontainers/runc v1.1.12 // indirect

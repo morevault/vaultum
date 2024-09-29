@@ -14,6 +14,7 @@ import (
 	"strings"
 	"time"
 
+	ctconfig "github.com/hashicorp/consul-template/config"
 	"github.com/hashicorp/go-multierror"
 	"github.com/hashicorp/go-secure-stdlib/parseutil"
 	"github.com/hashicorp/hcl"
@@ -22,7 +23,6 @@ import (
 	"github.com/morevault/vaultum/command/agentproxyshared"
 	"github.com/morevault/vaultum/helper/namespace"
 	"github.com/morevault/vaultum/internalshared/configutil"
-	ctconfig "github.com/openbao/openbao-template/config"
 )
 
 // Config is the configuration for Vault Proxy.

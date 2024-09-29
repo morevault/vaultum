@@ -10,7 +10,7 @@ import (
 	"time"
 
 	"github.com/go-test/deep"
-	ctconfig "github.com/openbao/openbao-template/config"
+	ctconfig "github.com/hashicorp/consul-template/config"
 	"golang.org/x/exp/slices"
 
 	"github.com/morevault/vaultum/command/agentproxyshared"

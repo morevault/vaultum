@@ -14,6 +14,7 @@ import (
 	"testing"
 	"time"
 
+	ctconfig "github.com/hashicorp/consul-template/config"
 	"github.com/hashicorp/go-hclog"
 	"github.com/morevault/vaultum/command/agent/config"
 	"github.com/morevault/vaultum/command/agent/internal/ctmanager"
@@ -22,7 +23,6 @@ import (
 	"github.com/morevault/vaultum/internalshared/listenerutil"
 	"github.com/morevault/vaultum/sdk/v2/helper/logging"
 	"github.com/morevault/vaultum/sdk/v2/helper/pointerutil"
-	ctconfig "github.com/openbao/openbao-template/config"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"google.golang.org/grpc/test/bufconn"

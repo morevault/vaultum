@@ -11,6 +11,8 @@ import (
 	"fmt"
 	"net/http"
 
+	wrapping "github.com/hashicorp/go-kms-wrapping/v2"
+	aeadwrapper "github.com/hashicorp/go-kms-wrapping/wrappers/aead/v2"
 	"github.com/hashicorp/go-uuid"
 	"github.com/morevault/vaultum/helper/pgpkeys"
 	"github.com/morevault/vaultum/sdk/v2/helper/consts"
@@ -19,8 +21,6 @@ import (
 	"github.com/morevault/vaultum/sdk/v2/logical"
 	"github.com/morevault/vaultum/sdk/v2/physical"
 	"github.com/morevault/vaultum/vault/seal"
-	wrapping "github.com/openbao/go-kms-wrapping/v2"
-	aeadwrapper "github.com/openbao/go-kms-wrapping/wrappers/aead/v2"
 )
 
 const (

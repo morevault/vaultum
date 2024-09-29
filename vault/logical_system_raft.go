@@ -12,6 +12,7 @@ import (
 	"time"
 
 	"github.com/golang/protobuf/proto"
+	wrapping "github.com/hashicorp/go-kms-wrapping/v2"
 	"github.com/hashicorp/go-uuid"
 	"github.com/mitchellh/mapstructure"
 	"github.com/morevault/vaultum/helper/namespace"
@@ -19,7 +20,6 @@ import (
 	"github.com/morevault/vaultum/sdk/v2/framework"
 	"github.com/morevault/vaultum/sdk/v2/logical"
 	"github.com/morevault/vaultum/sdk/v2/physical"
-	wrapping "github.com/openbao/go-kms-wrapping/v2"
 )
 
 // raftStoragePaths returns paths for use when raft is the storage mechanism.

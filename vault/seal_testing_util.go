@@ -4,10 +4,10 @@ package vault
 
 import (
 	"github.com/hashicorp/go-hclog"
+	aeadwrapper "github.com/hashicorp/go-kms-wrapping/wrappers/aead/v2"
 	testing "github.com/mitchellh/go-testing-interface"
 	"github.com/morevault/vaultum/sdk/v2/helper/logging"
 	"github.com/morevault/vaultum/vault/seal"
-	aeadwrapper "github.com/openbao/go-kms-wrapping/wrappers/aead/v2"
 )
 
 func NewTestSeal(t testing.T, opts *seal.TestSealOpts) Seal {

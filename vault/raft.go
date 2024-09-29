@@ -19,6 +19,7 @@ import (
 	"github.com/hashicorp/go-discover"
 	discoverk8s "github.com/hashicorp/go-discover/provider/k8s"
 	"github.com/hashicorp/go-hclog"
+	wrapping "github.com/hashicorp/go-kms-wrapping/v2"
 	"github.com/hashicorp/go-secure-stdlib/tlsutil"
 	"github.com/hashicorp/go-uuid"
 	"github.com/mitchellh/mapstructure"
@@ -27,7 +28,6 @@ import (
 	"github.com/morevault/vaultum/sdk/v2/helper/jsonutil"
 	"github.com/morevault/vaultum/sdk/v2/logical"
 	"github.com/morevault/vaultum/vault/seal"
-	wrapping "github.com/openbao/go-kms-wrapping/v2"
 	"golang.org/x/net/http2"
 )
 

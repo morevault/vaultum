@@ -11,12 +11,12 @@ import (
 	"net/url"
 	"sync/atomic"
 
+	wrapping "github.com/hashicorp/go-kms-wrapping/v2"
 	"github.com/morevault/vaultum/helper/namespace"
 	"github.com/morevault/vaultum/helper/pgpkeys"
 	"github.com/morevault/vaultum/physical/raft"
 	"github.com/morevault/vaultum/sdk/v2/helper/shamir"
 	"github.com/morevault/vaultum/vault/seal"
-	wrapping "github.com/openbao/go-kms-wrapping/v2"
 )
 
 // InitParams keeps the init function from being littered with too many

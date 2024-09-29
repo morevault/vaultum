@@ -11,6 +11,7 @@ import (
 
 	"github.com/go-test/deep"
 	"github.com/hashicorp/go-hclog"
+	wrapping "github.com/hashicorp/go-kms-wrapping/v2"
 	"github.com/morevault/vaultum/api/v2"
 	"github.com/morevault/vaultum/helper/namespace"
 	"github.com/morevault/vaultum/helper/testhelpers"
@@ -19,7 +20,6 @@ import (
 	"github.com/morevault/vaultum/http"
 	"github.com/morevault/vaultum/physical/raft"
 	"github.com/morevault/vaultum/vault"
-	wrapping "github.com/openbao/go-kms-wrapping/v2"
 )
 
 const (

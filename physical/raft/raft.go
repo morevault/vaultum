@@ -20,6 +20,7 @@ import (
 	"github.com/armon/go-metrics"
 	"github.com/golang/protobuf/proto"
 	log "github.com/hashicorp/go-hclog"
+	wrapping "github.com/hashicorp/go-kms-wrapping/v2"
 	"github.com/hashicorp/go-raftchunking"
 	"github.com/hashicorp/go-secure-stdlib/parseutil"
 	"github.com/hashicorp/go-secure-stdlib/tlsutil"
@@ -38,7 +39,6 @@ import (
 	"github.com/morevault/vaultum/vault/cluster"
 	"github.com/morevault/vaultum/vault/seal"
 	"github.com/morevault/vaultum/version"
-	wrapping "github.com/openbao/go-kms-wrapping/v2"
 	bolt "go.etcd.io/bbolt"
 )
 

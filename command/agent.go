@@ -20,6 +20,7 @@ import (
 
 	systemd "github.com/coreos/go-systemd/daemon"
 	"github.com/hashicorp/cli"
+	ctconfig "github.com/hashicorp/consul-template/config"
 	"github.com/hashicorp/go-hclog"
 	"github.com/hashicorp/go-multierror"
 	"github.com/hashicorp/go-secure-stdlib/gatedwriter"
@@ -27,7 +28,6 @@ import (
 	"github.com/hashicorp/go-secure-stdlib/reloadutil"
 	"github.com/kr/pretty"
 	"github.com/oklog/run"
-	ctconfig "github.com/openbao/openbao-template/config"
 	"github.com/posener/complete"
 	"golang.org/x/text/cases"
 	"golang.org/x/text/language"
