@@ -1,4 +1,3 @@
-
 // SPDX-License-Identifier: MPL-2.0
 
 // Package main within login-kerb is used for testing the important

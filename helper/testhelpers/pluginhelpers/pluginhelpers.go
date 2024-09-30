@@ -1,4 +1,3 @@
-
 // SPDX-License-Identifier: MPL-2.0
 
 // Package pluginhelpers contains testhelpers that don't depend on package

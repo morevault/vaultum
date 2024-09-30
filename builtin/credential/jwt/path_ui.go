@@ -1,4 +1,3 @@
-
 // SPDX-License-Identifier: MPL-2.0
 
 // A minimal UI for simple testing via a UI without Vault

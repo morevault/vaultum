@@ -1,4 +1,3 @@
-
 // SPDX-License-Identifier: MPL-2.0
 
 // Package template is responsible for rendering user supplied templates to
