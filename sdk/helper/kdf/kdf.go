@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+
 // SPDX-License-Identifier: MPL-2.0
 
 // This package is used to implement Key Derivation Functions (KDF)

@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+
 // SPDX-License-Identifier: MPL-2.0
 
 // Package corehelpers contains testhelpers that don't depend on package vault,

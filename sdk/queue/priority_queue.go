@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+
 // SPDX-License-Identifier: MPL-2.0
 
 // Package queue  provides Vault plugins with a Priority Queue. It can be used
