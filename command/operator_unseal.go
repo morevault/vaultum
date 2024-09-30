@@ -1,4 +1,3 @@
-
 // SPDX-License-Identifier: MPL-2.0
 
 package command
@@ -30,7 +29,7 @@ type OperatorUnsealCommand struct {
 }
 
 func (c *OperatorUnsealCommand) Synopsis() string {
-	return "Unseals the OpenBao server"
+	return "Unseals the Vaultum  server"
 }
 
 func (c *OperatorUnsealCommand) Help() string {

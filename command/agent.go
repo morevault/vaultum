@@ -1,4 +1,3 @@
-
 // SPDX-License-Identifier: MPL-2.0
 
 package command
@@ -96,19 +95,19 @@ type AgentCommand struct {
 }
 
 func (c *AgentCommand) Synopsis() string {
-	return "Start an OpenBao agent"
+	return "Start an Vaultum agent"
 }
 
 func (c *AgentCommand) Help() string {
 	helpText := `
-Usage: bao agent [options]
+Usage: vaultum agent [options]
 
-  This command starts an OpenBao Agent that can perform automatic authentication
+  This command starts an Vaultum Agent that can perform automatic authentication
   in certain environments.
 
   Start an agent with a configuration file:
 
-      $ bao agent -config=/etc/openbao/config.hcl
+      $ vaultum agent -config=/path/to/config.hcl
 
   For a full list of examples, please see the documentation.
 
@@ -146,11 +145,11 @@ func (c *AgentCommand) Flags() *FlagSets {
 
 	// Internal-only flags to follow.
 	//
-	// Why hello there little source code reader! Welcome to the OpenBao source
+	// Why hello there little source code reader! Welcome to the Vaultum source
 	// code. The remaining options are intentionally undocumented and come with
 	// no warranty or backwards-compatibility promise. Do not use these flags
 	// in production. Do not build automation using these flags. Unless you are
-	// developing against OpenBao, you should not need any of these flags.
+	// developing against Vaultum, you should not need any of these flags.
 	f.BoolVar(&BoolVar{
 		Name:    "test-verify-only",
 		Target:  &c.flagTestVerifyOnly,
@@ -274,8 +273,8 @@ func (c *AgentCommand) Run(args []string) int {
 		serverVersion := serverHealth.Version
 		agentVersion := version.GetVersion().VersionNumber()
 		if serverVersion != agentVersion {
-			c.UI.Info("==> Note: OpenBao Agent version does not match OpenBao server version. " +
-				fmt.Sprintf("OpenBao Agent version: %s, OpenBao server version: %s", agentVersion, serverVersion))
+			c.UI.Info("==> Note: Vaultum Agent version does not match Vaultum  server version. " +
+				fmt.Sprintf("Vaultum Agent version: %s, Vaultum  server version: %s", agentVersion, serverVersion))
 		}
 	}
 
@@ -284,9 +283,9 @@ func (c *AgentCommand) Run(args []string) int {
 		// we log on each API proxy call, which would be too noisy.
 		// A customer could have a listener defined but only be using e.g. the cache-clear API,
 		// even though the API proxy is something they have available.
-		c.UI.Warn("==> Note: OpenBao Agent will be deprecating API proxy functionality in a future " +
-			"release, and this functionality has moved to a new subcommand, OpenBao proxy. If you rely on this " +
-			"functionality, plan to move to OpenBao Proxy instead.")
+		c.UI.Warn("==> Note: Vaultum Agent will be deprecating API proxy functionality in a future " +
+			"release, and this functionality has moved to a new subcommand, Vaultum proxy. If you rely on this " +
+			"functionality, plan to move to Vaultum Proxy instead.")
 	}
 
 	// ctx and cancelFunc are passed to the AuthHandler, SinkServer, ExecServer and
@@ -299,8 +298,8 @@ func (c *AgentCommand) Run(args []string) int {
 	inmemMetrics, _, prometheusEnabled, err := configutil.SetupTelemetry(&configutil.SetupTelemetryOpts{
 		Config:      config.Telemetry,
 		Ui:          c.UI,
-		ServiceName: "bao",
-		DisplayName: "OpenBao",
+		ServiceName: "vaultum",
+		DisplayName: "Vaultum",
 		UserAgent:   useragent.AgentString(),
 		ClusterName: config.ClusterName,
 	})
@@ -401,7 +400,7 @@ func (c *AgentCommand) Run(args []string) int {
 
 	// Output the header that the agent has started
 	if !c.logFlags.flagCombineLogs {
-		c.UI.Output("==> OpenBao Agent started! Log data will stream in below:\n")
+		c.UI.Output("==> Vaultum Agent started! Log data will stream in below:\n")
 	}
 
 	var leaseCache *cache.LeaseCache
@@ -592,7 +591,7 @@ func (c *AgentCommand) Run(args []string) int {
 		for {
 			select {
 			case <-c.SighupCh:
-				c.UI.Output("==> OpenBao Agent config reload triggered")
+				c.UI.Output("==> Vaultum Agent config reload triggered")
 				err := c.reloadConfig(c.flagConfigs)
 				if err != nil {
 					c.outputErrors(err)
@@ -615,7 +614,7 @@ func (c *AgentCommand) Run(args []string) int {
 		for {
 			select {
 			case <-c.ShutdownCh:
-				c.UI.Output("==> OpenBao Agent shutdown triggered")
+				c.UI.Output("==> Vaultum Agent shutdown triggered")
 				// Notify systemd that the server is shutting down
 				// Let the lease cache know this is a shutdown; no need to evict everything
 				if leaseCache != nil {
@@ -760,7 +759,7 @@ func (c *AgentCommand) Run(args []string) int {
 	padding := 24
 	sort.Strings(infoKeys)
 	caser := cases.Title(language.English)
-	c.UI.Output("==> OpenBao Agent configuration:\n")
+	c.UI.Output("==> Vaultum Agent configuration:\n")
 	for _, k := range infoKeys {
 		c.UI.Output(fmt.Sprintf(
 			"%s%s: %s",
@@ -1112,11 +1111,11 @@ func (c *AgentCommand) loadConfig(paths []string) (*agentConfig.Config, error) {
 }
 
 // reloadConfig will attempt to reload the config from file(s) and adjust certain
-// config values without requiring a restart of the Vault Agent.
+// config values without requiring a restart of the Vaultum Agent.
 // If config is retrieved without error it is stored in the config field of the AgentCommand.
 // This operation is not atomic and could result in updated config but partially applied config settings.
 // The error returned from this func may be a multierror.
-// This function will most likely be called due to Vault Agent receiving a SIGHUP signal.
+// This function will most likely be called due to Vaultum Agent receiving a SIGHUP signal.
 // Currently only reloading the following are supported:
 // * log level
 // * TLS certs for listeners

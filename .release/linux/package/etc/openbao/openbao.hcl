@@ -1,4 +1,4 @@
-# Copyright (c) HashiCorp, Inc.
+
 # SPDX-License-Identifier: MPL-2.0
 
 # Full configuration options can be found at https://github.com/openbao/openbao/tree/main/website/content/docs/configuration

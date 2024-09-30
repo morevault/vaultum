@@ -1,4 +1,3 @@
-
 // SPDX-License-Identifier: MPL-2.0
 
 package command
@@ -141,7 +140,7 @@ type ServerCommand struct {
 }
 
 func (c *ServerCommand) Synopsis() string {
-	return "Start a Vault server"
+	return "Start Vaultum server"
 }
 
 func (c *ServerCommand) Help() string {
@@ -612,7 +611,7 @@ func (c *ServerCommand) runRecoveryMode() int {
 	padding := 24
 
 	sort.Strings(infoKeys)
-	c.UI.Output("==> OpenBao server configuration:\n")
+	c.UI.Output("==> Vaultum  server configuration:\n")
 
 	for _, k := range infoKeys {
 		c.UI.Output(fmt.Sprintf(
@@ -670,7 +669,7 @@ func (c *ServerCommand) runRecoveryMode() int {
 	}
 
 	if !c.logFlags.flagCombineLogs {
-		c.UI.Output("==> OpenBao server started! Log data will stream in below:\n")
+		c.UI.Output("==> Vaultum  server started! Log data will stream in below:\n")
 	}
 
 	c.flushLog()
@@ -1311,7 +1310,7 @@ func (c *ServerCommand) Run(args []string) int {
 	info["administrative namespace"] = config.AdministrativeNamespacePath
 
 	sort.Strings(infoKeys)
-	c.UI.Output("==> OpenBao server configuration:\n")
+	c.UI.Output("==> Vaultum  server configuration:\n")
 
 	for _, k := range infoKeys {
 		c.UI.Output(fmt.Sprintf(
@@ -1398,7 +1397,7 @@ func (c *ServerCommand) Run(args []string) int {
 
 	// Output the header that the server has started
 	if !c.logFlags.flagCombineLogs {
-		c.UI.Output("==> OpenBao server started! Log data will stream in below:\n")
+		c.UI.Output("==> Vaultum  server started! Log data will stream in below:\n")
 	}
 
 	// Inform any tests that the server is ready
@@ -1875,7 +1874,7 @@ func (c *ServerCommand) enableThreeNodeDevCluster(base *vault.CoreConfig, info m
 	padding := 24
 
 	sort.Strings(infoKeys)
-	c.UI.Output("==> OpenBao server configuration:\n")
+	c.UI.Output("==> Vaultum  server configuration:\n")
 
 	for _, k := range infoKeys {
 		c.UI.Output(fmt.Sprintf(
@@ -2004,7 +2003,7 @@ func (c *ServerCommand) enableThreeNodeDevCluster(base *vault.CoreConfig, info m
 	}
 
 	// Output the header that the server has started
-	c.UI.Output("==> OpenBao server started! Log data will stream in below:\n")
+	c.UI.Output("==> Vaultum  server started! Log data will stream in below:\n")
 
 	// Inform any tests that the server is ready
 	select {

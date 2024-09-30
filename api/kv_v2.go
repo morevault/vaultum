@@ -1,4 +1,3 @@
-
 // SPDX-License-Identifier: MPL-2.0
 
 package api
@@ -680,7 +679,7 @@ func mergePatch(ctx context.Context, client *Client, mountPath string, secretPat
 			switch re.StatusCode {
 			// 403
 			case http.StatusForbidden:
-				return nil, fmt.Errorf("received 403 from OpenBao server; please ensure that token's policy has \"patch\" capability: %w", err)
+				return nil, fmt.Errorf("received 403 from Vaultum  server; please ensure that token's policy has \"patch\" capability: %w", err)
 
 			// 404
 			case http.StatusNotFound:

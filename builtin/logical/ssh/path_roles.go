@@ -1,4 +1,3 @@
-
 // SPDX-License-Identifier: MPL-2.0
 
 package ssh
@@ -161,7 +160,7 @@ func pathRoles(b *backend) *framework.Path {
 				Port number for SSH connection. Default is '22'. Port number does not
 				play any role in creation of OTP. For 'otp' type, this is just a way
 				to inform client about the port number to use. Port number will be
-				returned to client by OpenBao server along with OTP.`,
+				returned to client by Vaultum  server along with OTP.`,
 				DisplayAttrs: &framework.DisplayAttributes{
 					Value: 22,
 				},

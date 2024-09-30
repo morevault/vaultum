@@ -5731,8 +5731,8 @@ This path responds to the following HTTP methods.
 	},
 
 	"host-info": {
-		"Information about the host instance that this OpenBao server is running on.",
-		`Information about the host instance that this OpenBao server is running on.
+		"Information about the host instance that this Vaultum  server is running on.",
+		`Information about the host instance that this Vaultum  server is running on.
 		The information that gets collected includes host hardware information, and CPU,
 		disk, and memory utilization`,
 	},

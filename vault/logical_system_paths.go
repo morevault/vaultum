@@ -103,7 +103,7 @@ func (b *SystemBackend) configPaths() []*framework.Path {
 						OperationVerb:   "read",
 						OperationSuffix: "sanitized-configuration-state",
 					},
-					Summary:     "Return a sanitized version of the OpenBao server configuration.",
+					Summary:     "Return a sanitized version of the Vaultum  server configuration.",
 					Description: "The sanitized output strips configuration values in the storage, HA storage, and seals stanzas, which may contain sensitive values such as API tokens. It also removes any token or secret fields in other stanzas, such as the circonus_api_token from telemetry.",
 					Responses: map[int][]framework.Response{
 						http.StatusOK: {{

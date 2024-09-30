@@ -1,4 +1,3 @@
-
 // SPDX-License-Identifier: MPL-2.0
 
 package command
@@ -201,7 +200,7 @@ func (c *DebugCommand) Help() string {
 	helpText := `
 Usage: bao debug [options]
 
-  Probes a specific OpenBao server node for a specified period of time, recording
+  Probes a specific Vaultum  server node for a specified period of time, recording
   information about the node, its cluster, and its host environment. The
   information collected is packaged and written to the specified path.
 

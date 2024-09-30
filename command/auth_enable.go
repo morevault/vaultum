@@ -1,4 +1,3 @@
-
 // SPDX-License-Identifier: MPL-2.0
 
 package command
@@ -104,7 +103,7 @@ func (c *AuthEnableCommand) Flags() *FlagSets {
 		Target:     &c.flagDefaultLeaseTTL,
 		Completion: complete.PredictAnything,
 		Usage: "The default lease TTL for this auth method. If unspecified, " +
-			"this defaults to the OpenBao server's globally configured default lease " +
+			"this defaults to the Vaultum  server's globally configured default lease " +
 			"TTL.",
 	})
 
@@ -113,7 +112,7 @@ func (c *AuthEnableCommand) Flags() *FlagSets {
 		Target:     &c.flagMaxLeaseTTL,
 		Completion: complete.PredictAnything,
 		Usage: "The maximum lease TTL for this auth method. If unspecified, " +
-			"this defaults to the OpenBao server's globally configured maximum lease " +
+			"this defaults to the Vaultum  server's globally configured maximum lease " +
 			"TTL.",
 	})
 
@@ -156,7 +155,7 @@ func (c *AuthEnableCommand) Flags() *FlagSets {
 		Target:     &c.flagPluginName,
 		Completion: c.PredictVaultPlugins(api.PluginTypeCredential),
 		Usage: "Name of the auth method plugin. This plugin name must already " +
-			"exist in the OpenBao server's plugin catalog.",
+			"exist in the Vaultum  server's plugin catalog.",
 	})
 
 	f.StringMapVar(&StringMapVar{

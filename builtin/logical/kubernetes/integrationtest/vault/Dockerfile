@@ -1,4 +1,4 @@
-# Copyright (c) HashiCorp, Inc.
+
 # SPDX-License-Identifier: MPL-2.0
 
 FROM docker.mirror.hashicorp.services/hashicorp/vault-enterprise:1.15.0-ent as enterprise

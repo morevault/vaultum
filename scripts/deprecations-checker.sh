@@ -1,4 +1,4 @@
-# Copyright (c) HashiCorp, Inc.
+
 # SPDX-License-Identifier: MPL-2.0
 
 # This script is sourced into the shell running in a Github Actions workflow.
